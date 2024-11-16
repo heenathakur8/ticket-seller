@@ -1,0 +1,85 @@
+.container{
+   height: 100vh;
+   width: 100%;
+   /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.innerbox{
+    height:90%;
+    width: 95%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content:space-evenly;
+
+}
+#one1{
+    background-image: url(concert.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+#one2{
+    background-image: url(comedyconcert.jpg);
+    background-repeat: no-repeat;
+    background-position:   center center;
+    background-size: cover;
+
+}
+#one3{
+    background-image: url(threatre1.webp);
+    background-repeat: no-repeat;
+    background-position:   center center;
+    background-size: cover;
+
+}
+.outerbox{
+    height: 100%;
+    width: 60vh;
+    /* background-color: blue; */
+}
+.innerbox>div{
+    color: aliceblue;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#name{
+    font-size: 60px;
+}
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    border: whitesmoke;
+    border: white 2px solid;
+    
+}
+button:hover{
+background-color: red;
+font-size: 30px;
+border: 1px red solid;
+color: white;
+}
+@media  (max-width:1200px) {
+    .container{
+        height: 100%;
+        width:100%;
+    }
+    .innerbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .outerbox{
+        margin-bottom:30px;
+        height:90vh;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    #one2{
+        background-position: center center;
+    }
+    
+}
